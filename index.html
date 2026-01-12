@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khawla & Abdelkader | Mariage</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Music -->
+<audio id="bg-music" autoplay loop>
+  <source src="audio/romantic-music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Language Switcher -->
+<div class="lang-switch">
+  <button onclick="switchLanguage('fr')">FR</button>
+  <button onclick="switchLanguage('ar')">AR</button>
+</div>
+
+<!-- Hero Section -->
+<header class="hero parallax" style="background-image: url('images/hero.jpg')">
+  <div class="overlay fade-in">
+    <h1 class="script-font" data-lang-fr="Khawla & Abdelkader" data-lang-ar="خولة و عبد القادر">Khawla & Abdelkader</h1>
+    <p data-lang-fr="Nous allons nous marier 💍" data-lang-ar="نتزوج قريباً 💍">Nous allons nous marier 💍</p>
+    <div id="countdown"></div>
+  </div>
+</header>
+
+<!-- Sections -->
+<section class="section fade-in" data-lang-fr="Notre histoire" data-lang-ar="قصتنا">
+  <h2>Notre histoire</h2>
+  <div class="gallery">
+    <img src="images/engagement1.jpg" alt="Engagement" class="gallery-img">
+    <img src="images/engagement2.jpg" alt="Engagement" class="gallery-img">
+  </div>
+  <p data-lang-fr="Avec la bénédiction de nos familles, nous vous invitons à célébrer notre union."
+     data-lang-ar="بمباركة عائلتنا، ندعوكم للاحتفال معنا في يومنا المميز.">
+    Avec la bénédiction de nos familles, nous vous invitons à célébrer notre union.
+  </p>
+</section>
+
+<section class="section light fade-in" data-lang-fr="Fiançailles" data-lang-ar="الخطوبة">
+  <h2>Fiançailles</h2>
+  <p data-lang-fr="📍 Mosquée de Carthage<br>🗓 05 Juin 2026"
+     data-lang-ar="📍 مسجد قرطاج<br>🗓 05 يونيو 2026">
+    📍 Mosquée de Carthage<br>🗓 05 Juin 2026
+  </p>
+</section>
+
+<section class="section fade-in" data-lang-fr="Cérémonie de mariage" data-lang-ar="الزفاف">
+  <h2>Cérémonie de mariage</h2>
+  <div class="gallery">
+    <img src="images/wedding1.jpg" alt="Mariage" class="gallery-img">
+    <img src="images/wedding2.jpg" alt="Mariage" class="gallery-img">
+  </div>
+  <p data-lang-fr="📍 Dar Elzmen, Utique<br>🗓 Dimanche 07 Juin 2026<br>⏰ 20h00"
+     data-lang-ar="📍 دار الزمن، أوتيك<br>🗓 الأحد 07 يونيو 2026<br>⏰ الساعة 8:00 مساءً">
+    📍 Dar Elzmen, Utique<br>🗓 Dimanche 07 Juin 2026<br>⏰ 20h00
+  </p>
+</section>
+
+<section class="section light fade-in" data-lang-fr="Lieu" data-lang-ar="الموقع">
+  <h2>Lieu</h2>
+  <img src="images/location.jpg" alt="Lieu du mariage" class="section-image">
+  <iframe src="https://www.google.com/maps?q=Dar%20Elzmen%20Utique&output=embed" loading="lazy"></iframe>
+</section>
+
+<section class="section fade-in" data-lang-fr="Code vestimentaire" data-lang-ar="الزي الرسمي">
+  <h2>Code vestimentaire</h2>
+  <img src="images/dresscode.jpg" alt="Dress Code" class="section-image">
+  <p data-lang-fr="Nous vous invitons à porter des couleurs élégantes dans les tons vert sauge et blanc 🌿🤍"
+     data-lang-ar="ندعوكم لارتداء ألوان أنيقة بدرجات الأخضر الزمردي والأبيض 🌿🤍">
+    Nous vous invitons à porter des couleurs élégantes dans les tons vert sauge et blanc 🌿🤍
+  </p>
+</section>
+
+<section class="section light fade-in" data-lang-fr="RSVP" data-lang-ar="تأكيد الحضور">
+  <h2>RSVP</h2>
+  <button onclick="confirmAttendance()" data-lang-fr="Confirmer ma présence" data-lang-ar="تأكيد الحضور">Confirmer ma présence</button>
+  <p id="rsvp"></p>
+  <a href="https://wa.me/1234567890?text=Bonjour!%20Je%20souhaite%20confirmer%20ma%20présence%20au%20mariage" 
+     target="_blank" class="whatsapp-btn" data-lang-fr="💬 RSVP via WhatsApp" data-lang-ar="💬 تأكيد الحضور عبر واتساب">
+    💬 RSVP via WhatsApp
+  </a>
+</section>
+
+<footer class="fade-in" data-lang-fr="Avec amour ❤️" data-lang-ar="مع الحب ❤️">
+  <p>Avec amour ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
