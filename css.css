@@ -1,16 +1,22 @@
 /* Reset */
-* { margin:0; padding:0; box-sizing:border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Playfair Display', serif;
-  background:#fafaf8;
-  color:#333;
-  text-align:center;
-  scroll-behavior:smooth;
-  overflow-x:hidden;
+  background: #fafaf8;
+  color: #333;
+  text-align: center;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.script-font { font-family: 'Dancing Script', cursive; }
+.script-font {
+  font-family: 'Dancing Script', cursive;
+}
 
 /* Language Switcher */
 .lang-switch {
@@ -20,158 +26,163 @@ body {
   z-index: 1000;
 }
 .lang-switch button {
-  margin:0 5px;
-  padding:6px 12px;
-  border:none;
-  background:#3c6b52;
-  color:white;
-  border-radius:5px;
-  cursor:pointer;
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: none;
+  background: #3c6b52;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
 }
-.lang-switch button:hover { background:#356048; }
+.lang-switch button:hover { background: #356048; }
 
-/* Hero with Parallax */
-.hero { 
-  height:100vh; 
-  background-attachment: fixed;
+/* Hero Section */
+.hero {
+  height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
 }
 .overlay {
-  background: rgba(0,0,0,0.45);
-  height:100%;
-  color:white;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  opacity:0;
-  transform:translateY(30px);
+  background: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 /* Sections */
-.section { padding:70px 20px; opacity:0; transform:translateY(30px);}
-.section h2 { font-size:2.2rem; margin-bottom:20px; color:#3c6b52; }
-.section p { font-size:1.1rem; line-height:1.7; }
-.section-image { width:100%; max-width:600px; border-radius:12px; margin-bottom:15px; }
+.section {
+  padding: 70px 20px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #3c6b52;
+}
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
 
-/* Light Sections */
-.light { background:#f5f5f3; }
+/* Light Section Background */
+.light {
+  background: #f5f5f3;
+}
 
 /* Buttons */
 button {
-  padding:14px 30px; border-radius:30px; border:none;
-  background:#3c6b52; color:white; font-size:1rem; cursor:pointer; margin-top:10px;
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #3c6b52;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
 }
-button:hover { background:#356048; }
+button:hover {
+  background: #356048;
+}
 
 .whatsapp-btn {
-  display:inline-block; margin-top:15px; padding:12px 25px;
-  border-radius:25px; background:#25D366; color:white; text-decoration:none; font-weight:500;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
-.whatsapp-btn:hover { background:#1ebe57; }
+.whatsapp-btn:hover {
+  background: #1ebe57;
+}
 
 /* Footer */
-footer { padding:30px; font-size:0.9rem; color:#777; opacity:0; transform:translateY(30px); }
+footer {
+  padding: 30px;
+  font-size: 0.9rem;
+  color: #777;
+  opacity: 0;
+  transform: translateY(30px);
+}
 
 /* Animations */
-@keyframes fadeUp { to {opacity:1; transform:translateY(0);} }
-.fade-in { animation:fadeUp 1s forwards; animation-delay:0.3s; }
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeUp 1s forwards;
+  animation-delay: 0.3s;
+}
 
 /* Countdown */
-#countdown { font-size:1.3rem; font-weight:500; margin-top:15px; }
+#countdown {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 15px;
+}
 
 /* Gallery */
-.gallery { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; }
-.gallery-img { width:calc(50% - 10px); cursor:pointer; border-radius:10px; transition:0.3s; }
-.gallery-img:hover { transform:scale(1.05); }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.gallery-img {
+  width: calc(50% - 10px);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+}
 
 /* Lightbox */
 #lightbox {
-  position:fixed; top:0; left:0; width:100%; height:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.9);
-  display:none; justify-content:center; align-items:center;
-  z-index:10000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
 }
-#lightbox img { max-width:90%; max-height:90%; border-radius:12px; }
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
 
 /* Responsive */
-@media (max-width:768px){
-  .section h2{ font-size:1.8rem; }
-  .overlay h1{ font-size:2.2rem; }
-  .gallery-img{ width:100%; }
-}
-// ===== Countdown Timer =====
-const weddingDate = new Date("June 7, 2026 20:00:00").getTime();
-const countdownEl = document.getElementById("countdown");
-
-setInterval(() => {
-  const now = new Date().getTime();
-  const distance = weddingDate - now;
-  if(distance<0){ countdownEl.innerHTML="Nous sommes mariés! 🎉"; return; }
-  const days = Math.floor(distance / (1000*60*60*24));
-  const hours = Math.floor((distance / (1000*60*60)) % 24);
-  const minutes = Math.floor((distance / (1000*60)) % 60);
-  const seconds = Math.floor((distance / 1000) % 60);
-  countdownEl.innerHTML = `${days} jours · ${hours} h · ${minutes} min · ${seconds} s`;
-}, 1000);
-
-// ===== RSVP Confirmation =====
-function confirmAttendance() {
-  document.getElementById("rsvp").innerText =
-    "Merci pour votre confirmation 💍 Nous avons hâte de vous voir!";
-}
-
-// ===== Scroll fade-in animation =====
-const faders = document.querySelectorAll('.fade-in');
-const appearOnScroll = new IntersectionObserver((entries, observer)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.style.animation='fadeUp 1s forwards';
-      observer.unobserve(entry.target);
-    }
-  });
-},{threshold:0.3});
-faders.forEach(fader => appearOnScroll.observe(fader));
-
-// ===== Lightbox Gallery =====
-const lightbox = document.createElement('div');
-lightbox.id = 'lightbox';
-document.body.appendChild(lightbox);
-
-const galleryImages = document.querySelectorAll('.gallery-img');
-galleryImages.forEach(img => {
-  img.addEventListener('click', () => {
-    lightbox.innerHTML = `<img src="${img.src}" alt="Wedding Image">`;
-    lightbox.style.display = 'flex';
-  });
-});
-
-lightbox.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-});
-
-// ===== Language Switcher =====
-function switchLanguage(lang){
-  document.querySelectorAll('[data-lang-fr]').forEach(el=>{
-    if(lang==='fr') el.innerText = el.dataset.langFr || el.innerHTML;
-    if(lang==='ar') el.innerText = el.dataset.langAr || el.innerHTML;
-  });
-}
-
-// ===== Background Music on first interaction =====
-const bgMusic = document.getElementById('bg-music');
-bgMusic.volume = 0.2; // soft music
-let musicStarted = false;
-
-function startMusic() {
-  if(!musicStarted){
-    bgMusic.play().catch(()=>{});
-    musicStarted = true;
-    window.removeEventListener('click', startMusic);
-    window.removeEventListener('scroll', startMusic);
-  }
-}
-window.addEventListener('click', startMusic);
-window.addEventListener('scroll', startMusic);
+@media (max-width: 768px) {
+  .section h2 { font-size: 1.8rem; }
+  .overlay
