@@ -25,21 +25,17 @@
 </div>
 
 <!-- Hero Section -->
-<header class="hero parallax" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1470&q=80')">
+<header class="hero parallax" style="background-image: url('https://images.unsplash.com/photo-1600185366801-97b2a2c551e8?auto=format&fit=crop&w=1470&q=80')">
   <div class="overlay fade-in">
     <h1 class="script-font" data-lang-fr="Khawla & Abdelkader" data-lang-ar="خولة و عبد القادر">Khawla & Abdelkader</h1>
-    <p data-lang-fr="Nous allons nous marier 💍" data-lang-ar="نتزوج قريباً 💍">Nous allons nous marier 💍</p>
+    <p class="sub-title" data-lang-fr="Nous allons nous marier 💍" data-lang-ar="نتزوج قريباً 💍">Nous allons nous marier 💍</p>
     <div id="countdown"></div>
   </div>
 </header>
 
 <!-- Story Section -->
-<section class="section fade-in" data-lang-fr="Notre histoire" data-lang-ar="قصتنا">
-  <h2>Notre histoire</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1508747703725-719e6d71f7e3?auto=format&fit=crop&w=700&q=80" alt="Engagement" class="gallery-img">
-    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80" alt="Engagement" class="gallery-img">
-  </div>
+<section class="section fade-in">
+  <h2 data-lang-fr="Notre histoire" data-lang-ar="قصتنا">Notre histoire</h2>
   <p data-lang-fr="Avec la bénédiction de nos familles, nous vous invitons à célébrer notre union."
      data-lang-ar="بمباركة عائلتنا، ندعوكم للاحتفال معنا في يومنا المميز.">
     Avec la bénédiction de nos familles, nous vous invitons à célébrer notre union.
@@ -47,38 +43,26 @@
 </section>
 
 <!-- Wedding Section -->
-<section class="section light fade-in" data-lang-fr="Cérémonie de mariage" data-lang-ar="الزفاف">
-  <h2>Cérémonie de mariage</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1533089860892-a36d97767b82?auto=format&fit=crop&w=700&q=80" alt="Mariage" class="gallery-img">
-    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=700&q=80" alt="Mariage" class="gallery-img">
-  </div>
+<section class="section fade-in light">
+  <h2 data-lang-fr="Cérémonie de mariage" data-lang-ar="الزفاف">Cérémonie de mariage</h2>
   <p data-lang-fr="📍 Dar Elzmen, Utique<br>🗓 Dimanche 07 Juin 2026<br>⏰ 20h00"
      data-lang-ar="📍 دار الزمن، أوتيك<br>🗓 الأحد 07 يونيو 2026<br>⏰ الساعة 8:00 مساءً">
     📍 Dar Elzmen, Utique<br>🗓 Dimanche 07 Juin 2026<br>⏰ 20h00
   </p>
 </section>
 
-<!-- Location -->
-<section class="section fade-in" data-lang-fr="Lieu" data-lang-ar="الموقع">
-  <h2>Lieu</h2>
-  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="Lieu du mariage" class="section-image">
-  <iframe src="https://www.google.com/maps?q=Dar%20Elzmen%20Utique&output=embed" loading="lazy"></iframe>
-</section>
-
-<!-- Dress Code -->
-<section class="section light fade-in" data-lang-fr="Code vestimentaire" data-lang-ar="الزي الرسمي">
-  <h2>Code vestimentaire</h2>
-  <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=700&q=80" alt="Dress Code" class="section-image">
-  <p data-lang-fr="Nous vous invitons à porter des couleurs élégantes dans les tons vert sauge et blanc 🌿🤍"
-     data-lang-ar="ندعوكم لارتداء ألوان أنيقة بدرجات الأخضر الزمردي والأبيض 🌿🤍">
-    Nous vous invitons à porter des couleurs élégantes dans les tons vert sauge et blanc 🌿🤍
+<!-- Dress Code Section -->
+<section class="section fade-in">
+  <h2 data-lang-fr="Code vestimentaire" data-lang-ar="الزي الرسمي">Code vestimentaire</h2>
+  <p data-lang-fr="Nous vous invitons à porter des couleurs élégantes : vert sauge, blanc et touches dorées 🌿🤍✨"
+     data-lang-ar="ندعوكم لارتداء ألوان أنيقة: الأخضر الزمردي، الأبيض ولمسات ذهبية 🌿🤍✨">
+    Nous vous invitons à porter des couleurs élégantes : vert sauge, blanc et touches dorées 🌿🤍✨
   </p>
 </section>
 
-<!-- RSVP -->
-<section class="section fade-in" data-lang-fr="RSVP" data-lang-ar="تأكيد الحضور">
-  <h2>RSVP</h2>
+<!-- RSVP Section -->
+<section class="section fade-in light">
+  <h2 data-lang-fr="RSVP" data-lang-ar="تأكيد الحضور">RSVP</h2>
   <button onclick="confirmAttendance()" data-lang-fr="Confirmer ma présence" data-lang-ar="تأكيد الحضور">Confirmer ma présence</button>
   <p id="rsvp"></p>
   <a href="https://wa.me/1234567890?text=Bonjour!%20Je%20souhaite%20confirmer%20ma%20présence%20au%20mariage" 
@@ -87,10 +71,26 @@
   </a>
 </section>
 
-<footer class="fade-in" data-lang-fr="Avec amour ❤️" data-lang-ar="مع الحب ❤️">
-  <p>Avec amour ❤️</p>
+<!-- Gallery Slider Section -->
+<section class="section fade-in">
+  <h2 data-lang-fr="Galerie" data-lang-ar="الصور">Galerie</h2>
+  <div class="slider">
+    <div class="slides">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Couple">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Engagement">
+      <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=900&q=80" alt="Love">
+    </div>
+  </div>
+</section>
+
+<!-- Address Section (Last) -->
+<section class="section fade-in light">
+  <h2 data-lang-fr="Lieu du mariage" data-lang-ar="مكان الزفاف">Lieu du mariage</h2>
+  <iframe src="https://www.google.com/maps?q=Dar%20Elzmen%20Utique&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<footer class="fade-in">
+  <p data-lang-fr="Avec amour ❤️" data-lang-ar="مع الحب ❤️">Avec amour ❤️</p>
 </footer>
 
 <script src="script.js"></script>
-</body>
-</html>
